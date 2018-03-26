@@ -13,19 +13,34 @@
         <link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
     </head>
     <body>
-        <a href="http://www.google.com"><h1>click me</h1></a>
-        
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="index.html">Webpage!</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li> <a href="#">Home    </a> </li>
-                    <li> <a href="#">About Us</a> </li>
-                    <li> <a href="#">Contact </a> </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li> <a href="#">Home    </a> </li>
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#">Contact </a> </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <article>
+            <div class="container">
+                <div class="jumbotron">
+                    Jumbotron of this page!!
+                </div>
+            </div>
+            <div class="container">
+                There are many things that are written here!
+            </div>
+        </article>
     </body>
 </html>
