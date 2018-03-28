@@ -58,7 +58,7 @@
                 </nav>
             </div>
         </article>
-        <footer>
+        <footer style="background-color:black; color:white;">
             footer things here!
         </footer>
     </body>

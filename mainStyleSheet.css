@@ -32,3 +32,12 @@ body{
     height:50px;
     display: inline-block;
 }
+/*
+ul{
+    list-style-type: none;
+}
+*/
+.resize-img img{
+    width:50%;
+    
+}
