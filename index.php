@@ -14,7 +14,9 @@
     </head>
     <body>
 
-    
+    <?php
+        include "navigationBar.php"
+    ?>
 
         <article id="top-fix-margin" class="container">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
