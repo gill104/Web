@@ -1,0 +1,20 @@
+{
+    "empanadas" : [
+        {
+            "name" : "Donut",
+            "imgPath" : "Images/Donut.png"
+        },
+        {
+            "name" : "emp-pine",
+            "imgPath" : "Images/emp-pine.jpg"
+        },
+        {
+            "name" : "emp-chee",
+            "imgPath" : "Images/emp-chee.jpg"
+        },
+        {
+            "name" : "emp-cand",
+            "imgPath" : "Images/emp-cand.jpg"
+        }
+    ]
+}
