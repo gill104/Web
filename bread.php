@@ -21,25 +21,29 @@
             {
                 var imgList = "";
                 var count = 0;
-                $.each(json.empanadas, function(){
-                    if(count == 3)
-                    {   
-                        imgList+= '</div>';
-                        count = 0;
-                    }
-                    
-                    if(count > 2 || count == 0){
-                        imgList += '<div class="row">';
-                    }
-                    imgList +=  '<div class="col-sm-4 resize-img">' + 
-                                    '<img class="img-thumbnail" src="' + this.imgPath + '">' +
-                                '</div>';
-                    count++;
-                });
-               
-                $('#breadLi').append(imgList);
-                console.log(imgList);
-
+                var items = [json.empanadas, json.toast, json.sponge, json.pasteries];
+                for(var x = 0; x < items.length; x++)
+                {
+                    $.each(items[x], function(){
+                        if(count == 4)
+                        {   
+                            imgList+= '</div>';
+                            count = 0;
+                        }
+                        
+                        if(count > 3 || count == 0){
+                            imgList += '<div class="row">';
+                        }
+                        imgList +=  '<div class="col-sm-3 resize-img">' + 
+                                        '<img class="img-thumbnail" src="' + this.imgPath + '">' +
+                                    '</div>';
+                        
+                        count++;
+                    });
+                }
+                    $('#breadLi').append(imgList);
+                    console.log(imgList);
+                
                 //document.getElementById("breadLi").innerHTML=imgList;
                 });
             });
@@ -48,34 +52,6 @@
     <body>
         <?php include("navigationBar.php"); ?>
         <p style="margin-top:70px" >This is another page!!!!</p>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 resize-img" >
-                    <img class="img-thumbnail" src="Images/AmaConcha.png" alt="yellow shell" />
-                    <p>This is a concha that we have</p>
-                </div>
-                <div class="col-sm-4 resize-img">
-                    <img class="img-thumbnail" src="Images/RosaConcha.png" alt="pink shell" />
-                </div>
-                <div class="col-sm-4 resize-img">
-                    <img class="img-thumbnail" src="Images/ChocoConcha.jpg" alt="brown shell"/>
-                </div>
-                <div class="col-sm-4 resize-img" >
-                    <img class="img-thumbnail" src="Images/emp-pine.jpg" alt="yellow shell" />
-                    <p>This is a concha that we have</p>
-                </div>
-                <div class="col-sm-4 resize-img">
-                    <img class="img-thumbnail" src="Images/emp-pump.jpg" alt="pink shell" />
-                </div>
-                <div class="col-sm-4 resize-img">
-                    <img class="img-thumbnail" src="Images/ChocoConcha.jpg" alt="brown shell"/>
-                </div>
-            </div>
-            <div class="row" style="background-color:red;">
-               
-            </div>
-        </div>
         <div id="breadLi" class="container">
         </div>
 
