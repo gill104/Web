@@ -19,11 +19,41 @@
 		//Get the paths of the images then once preloaded show them?
         $(document).ready(function()
         {
+				
+			var images=[];
+			function preload(){
+				for(var x = 0; x < arguments.length; x++)
+				{
+					images[x] = new Image();
+					images[x].src = preload.arguments[x];
+				
+					console.log(images[x]);
+				}
+			}
+			preload(
+		
+				"Images/emp-pump.jpg",
+				"Images/emp-pine.jpg",
+				"Images/emp-pine.jpg",
+				"Images/emp-chee.jpg",
+				"Images/emp-cand.jpg",
+				"Images/toast-square.jpg",
+				"Images/toast-ear.jpg",
+				"Images/sponge-white.jpg",
+				"Images/sponge-wall.jpg",
+				"Images/sponge-rose.jpg",
+				"Images/sponge-leg.jpg",
+				"Images/past-cup.jpg",
+				"Images/past-pig.jpg"
+			);
+		
+		
+		});
+		$(document).ready(function()
+        {
             var jsonURL = "breadImages.json";
             $.getJSON(jsonURL,function(json)
             {
-				
-			
                 var imgList = "";
                 var count = 0;
 				var classdef = 0;
@@ -34,19 +64,20 @@
 						var my_img = new Image();
 						my_img.src = this.imgPath;
 						console.log('first created: ' + my_img.src);
-                        if(count == 4)
+                        if(count == 3)
                         {   
                             imgList+= '</div>';
                             count = 0;
                         }
                         
-                        if(count > 3 || count == 0){
+                        if(count > 2 || count == 0){
                             imgList += '<div class="row">';
                         }
-                        imgList +=  '<div class="col-sm-3 resize-img ">' + 
-                                        '<img id="'+classdef+'"class="img-thumbnail imgArr" src=#>' +
+						//added style float testing 
+                        imgList +=  '<div class="col-sm-4 resize-img ">' + 
+                                        '<img style="float:left" id="'+classdef+'"class="img-thumbnail imgArr" src=#>' +
+										'<h4 style:"float:right;"> Bread name:' + this.name+'</h4>' +
                                     '</div>';
-								
                         count++;
 						classdef++;
                     });
@@ -54,8 +85,6 @@
 
                     $('#breadLi').append(imgList);//puts into a container below
                     console.log(imgList);
-                
-                //document.getElementById("breadLi").innerHTML=imgList;
                 });
             });
         </script>
@@ -63,14 +92,12 @@
     </head>
     <body>
         <?php include("navigationBar.php"); ?>
+
         <p style="margin-top:70px" >This is another page!!!!</p>
-        <div id="breadLi" class="container">
-        </div>
-		<div onload="preLoad();">
-		</div>
+
+        <div id="breadLi" class="container-fluid" style="background: 'red';">
+
 		<script>
-			//function preLoad()
-			//{
 			$(document).ready(function()//runs at this point while file being read
 			{
 				console.log('doing stuff inthis scrupt!!!');
@@ -98,7 +125,6 @@
 					document.getElementById(idVal).src = img;
 				}
 			});
-		
 		</script>
 
        

@@ -1,4 +1,4 @@
-body{
+body {
     background:blue;
 }
 .bg-white{
@@ -39,5 +39,11 @@ ul{
 
 .resize-img img{
     width:50%;
-    margin:auto;
+    margin:10px;
+
+    }
+#breadLi{
+    background-color: black;
+    border: solid 5px orange;
+    padding: 10px;
 }

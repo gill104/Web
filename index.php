@@ -13,37 +13,7 @@
         <link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
 
 	
-		<script>
-		var images=[];
-		function preload(){
-			for(var x = 0; x < arguments.length; x++)
-			{
-				images[x] = new Image();
-				images[x].src = preload.arguments[x];
-				
-				console.log(images[x]);
-			}
-		}
-		preload(
-		
-			"Images/emp-pump.jpg",
-			"Images/emp-pine.jpg",
-			"Images/emp-pine.jpg",
-			"Images/emp-chee.jpg",
-			"Images/emp-cand.jpg",
-			"Images/toast-square.jpg",
-			"Images/toast-ear.jpg",
-		    "Images/sponge-white.jpg",
-			"Images/sponge-wall.jpg",
-			"Images/sponge-rose.jpg",
-			"Images/sponge-leg.jpg",
-			"Images/past-cup.jpg",
-			"Images/past-pig.jpg"
-			
-		);
-		
-		
-		</script>
+
     </head>
     <body>
 
@@ -92,16 +62,6 @@
             </div>
         </article>
         <footer style="background-color:black; color:white;">
-			
-			<img src='#' id='testing_preloading' /></br>
-			
-		<script>
-			function runit()
-			{
-				document.getElementById('testing_preloading').src = "Images/emp-pump.jpg";		
-			}
-			runit();
-		</script>
             footer things here!
         </footer>
     </body>
