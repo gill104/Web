@@ -64,19 +64,21 @@
 						var my_img = new Image();
 						my_img.src = this.imgPath;
 						console.log('first created: ' + my_img.src);
-                        if(count == 3)
+                        if(count == 4)
                         {   
                             imgList+= '</div>';
                             count = 0;
                         }
                         
-                        if(count > 2 || count == 0){
+                        if(count > 3 || count == 0){
                             imgList += '<div class="row">';
                         }
 						//added style float testing 
-                        imgList +=  '<div class="col-sm-4 resize-img ">' + 
-                                        '<img style="float:left" id="'+classdef+'"class="img-thumbnail imgArr" src=#>' +
-										'<h4 style:"float:right;"> Bread name:' + this.name+'</h4>' +
+                        imgList +=  '<div id="li-container" class="container col-sm-3">' + 
+                                            '<img style="float:left;" id="'+classdef+'"class="img-thumbnail imgArr" src=#>' + 
+                                            '<div class="container col-sm-3">' +
+                                            '<h4 > Bread name:' + this.name + '</h4>'+
+                                            '</div>'+
                                     '</div>';
                         count++;
 						classdef++;
@@ -92,6 +94,7 @@
     </head>
     <body>
         <?php include("navigationBar.php"); ?>
+        <!--mk a sub nav bar to show all breads or catagories of them-->
 
         <p style="margin-top:70px" >This is another page!!!!</p>
 

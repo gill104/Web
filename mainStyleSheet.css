@@ -37,11 +37,12 @@ ul{
     list-style-type: none;
 }
 
-.resize-img img{
-    width:50%;
+#li-container img{
+    width:60%;
     margin:10px;
 
-    }
+}
+
 #breadLi{
     background-color: black;
     border: solid 5px orange;
