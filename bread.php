@@ -109,6 +109,7 @@
 					$.getJSON(jsonURL,function(json)
 					{
 						var items = [json.empanadas, json.toast, json.sponge, json.pasteries];
+					
 						for(var x = 0; x < items.length; x++)
 						{
 							 $.each(items[x], function(){
