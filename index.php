@@ -12,7 +12,43 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
 
+	        <script>
 	
+    //modify this script to preload images instead.
+    //Get the paths of the images then once preloaded show them?
+    $(document).ready(function()
+    {
+            
+        var images=[];
+        function preload(){
+            for(var x = 0; x < arguments.length; x++)
+            {
+                images[x] = new Image();
+                images[x].src = preload.arguments[x];
+            
+                console.log(images[x]);
+            }
+        }
+        preload(
+    
+            "Images/emp-pump.jpg",
+            "Images/emp-pine.jpg",
+            "Images/emp-pine.jpg",
+            "Images/emp-chee.jpg",
+            "Images/emp-cand.jpg",
+            "Images/toast-square.jpg",
+            "Images/toast-ear.jpg",
+            "Images/sponge-white.jpg",
+            "Images/sponge-wall.jpg",
+            "Images/sponge-rose.jpg",
+            "Images/sponge-leg.jpg",
+            "Images/past-cup.jpg",
+            "Images/past-pig.jpg"
+        );
+    
+    
+    });
+    </script>
 
     </head>
     <body>
