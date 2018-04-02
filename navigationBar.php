@@ -9,14 +9,14 @@
         
         $.getJSON(jsonFile,function(json)
         {
-            var breadTypes = [json.empanadas, json.toast, json.sponge, json.pasteries];
+            var breadTypes = [json.empanadas, json.toast, json.sponge, json.pastery];
             for(var key in json)
 		    {
                 node = document.createElement("Li");
                 var anchor = document.createElement("a");
                 anchor.innerHTML = key;
                 //add conditional for if based on key name to only display 'x' images
-                anchor.href = "bread.php";
+                anchor.href = key+".php";
                 node.appendChild(anchor);
                 document.getElementById("btypes").appendChild(node);
 				console.log(key);
@@ -43,7 +43,6 @@
                        <span class="caret"></span>
                     </a> 
                     <ul id="btypes" class="dropdown-menu">
-                       
                     </ul>
                     
                 </li>

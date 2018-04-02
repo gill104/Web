@@ -21,7 +21,7 @@
                 var imgList = "";
                 var count = 0;
 				var classdef = 0;
-                var items = [json.empanadas, json.toast, json.sponge, json.pasteries];
+                var items = [json.toast];
                 for(var x = 0; x < items.length; x++)
                 {
                     $.each(items[x], function(){
@@ -65,14 +65,14 @@
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
 		<script>
-			$(document).ready(function()//runs at this point while file being read
-			{
+		$(document).ready(function()
+        {
 				console.log('doing stuff inthis scrupt!!!');
 					var jsonURL = "breadImages.json";
 					var counter = 0;
 					$.getJSON(jsonURL,function(json)
 					{
-						var items = [json.empanadas, json.toast, json.sponge, json.pasteries];
+						var items = [json.toast];
 					
 						for(var x = 0; x < items.length; x++)
 						{
