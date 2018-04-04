@@ -31,19 +31,19 @@
         }
         preload(
     
-            "Images/emp-pump.jpg",
-            "Images/emp-pine.jpg",
-            "Images/emp-pine.jpg",
-            "Images/emp-chee.jpg",
-            "Images/emp-cand.jpg",
-            "Images/toast-square.jpg",
-            "Images/toast-ear.jpg",
-            "Images/sponge-white.jpg",
-            "Images/sponge-wall.jpg",
-            "Images/sponge-rose.jpg",
-            "Images/sponge-leg.jpg",
-            "Images/past-cup.jpg",
-            "Images/past-pig.jpg"
+            "Images/Empanada/emp-pump.jpg",
+            "Images/Empanada/emp-pine.jpg",
+            "Images/Empanada/emp-pine.jpg",
+            "Images/Empanada/emp-chee.jpg",
+            "Images/Empanada/emp-cand.jpg",
+            "Images/Toast/toast-square.jpg",
+            "Images/Toast/toast-ear.jpg",
+            "Images/Sponge/sponge-white.jpg",
+            "Images/Sponge/sponge-wall.jpg",
+            "Images/Sponge/sponge-rose.jpg",
+            "Images/Sponge/sponge-leg.jpg",
+            "Images/Pastry/past-cup.jpg",
+            "Images/Pastry/past-pig.jpg"
         );
     
     
@@ -72,10 +72,10 @@
                             <img src="Images/Donut.png" alt="donuts" />
                         </div>
                         <div class="item">
-                            <img src="Images/Concha.png" alt="donuts2" />
+                            <img src="Images/Sponge/Concha.png" alt="donuts2" />
                         </div>
                         <div class="item">
-                            <img src="Images/ChocoConcha.jpg" alt="donuts3" />
+                            <img src="Images/Sponge/ChocoConcha.jpg" alt="donuts3" />
                         </div>
                     </div>
 

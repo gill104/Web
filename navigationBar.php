@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"><img id="logo" src="Images/invertlogo2.png"/></a>
+            <a class="navbar-brand" href="index.php"><img id="logo" src="Images/Logo/invertlogo2.png"/></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">

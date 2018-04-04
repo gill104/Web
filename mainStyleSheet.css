@@ -1,6 +1,6 @@
 body {
     
-    background-image: url("Images/tempBG.jpg");
+    background-image: url("Images/Background/tempBG.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,4 +51,7 @@ ul{
     background-color: black;
     border: solid 5px orange;
     padding: 10px;
+}
+.amount-input{
+    width:10px;
 }

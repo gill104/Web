@@ -2,61 +2,61 @@
   "empanadas": [
     {
       "name": "Pineapple Emp",
-      "imgPath": "Images/emp-pine.jpg",
+      "imgPath": "Images/Empanada/emp-pine.jpg",
       "price" : "50"
     },
     {
       "name": "Cheese Emp",
-      "imgPath": "Images/emp-chee.jpg",
+      "imgPath": "Images/Empanada/emp-chee.jpg",
       "price" : "50"
     },
     {
       "name": "Cajeta Emp",
-      "imgPath": "Images/emp-cand2.jpg",
+      "imgPath": "Images/Empanada/emp-cand2.jpg",
       "price" : "50"
     },
     {
       "name": "Pumpkin Emp",
-      "imgPath": "Images/emp-pump.jpg",
+      "imgPath": "Images/Empanada/emp-pump.jpg",
       "price" : "50"
     }
   ],
     "toast" : [
         {
             "name" : "Toast-square",
-            "imgPath" : "Images/toast-square.jpg"
+            "imgPath" : "Images/Toast/toast-square.jpg"
         },
         {
             "name" : "Toast-ear",
-            "imgPath" : "Images/toast-ear.jpg"
+            "imgPath" : "Images/Toast/toast-ear.jpg"
         }
     ],
     "sponge" : [
         {
             "name" : "sponge-white",
-            "imgPath" : "Images/sponge-white.jpg"
+            "imgPath" : "Images/Sponge/sponge-white.jpg"
         },
         {
             "name" : "sponge-wall",
-            "imgPath" : "Images/sponge-wall.jpg"
+            "imgPath" : "Images/Sponge/sponge-wall.jpg"
         },
         {
             "name" : "sponge-rose",
-            "imgPath" : "Images/sponge-rose.jpg"
+            "imgPath" : "Images/Sponge/sponge-rose.jpg"
         },
         {
             "name" : "sponge-leg",
-            "imgPath" : "Images/sponge-leg.jpg"
+            "imgPath" : "Images/Sponge/sponge-leg.jpg"
         }
     ],
     "pastery" : [
         {
             "name" : "past-cup",
-            "imgPath" : "Images/past-cup.jpg"
+            "imgPath" : "Images/Pastry/past-cup.jpg"
         },
         {
             "name" : "past-pig",
-            "imgPath" : "Images/past-pig.jpg"
+            "imgPath" : "Images/Pastry/past-pig.jpg"
         }
     ]
     

@@ -43,9 +43,10 @@
                                             '<div class="container col-sm-12">' +
                                                 '<h4 style="color:white"> Name:' + this.name + '</h4>' +
                                                 '<h4 style="color:white"><span class="glyphicon glyphicon-usd"></span> : ' + this.price + 'c</h4>' +
-                                                '<form action="empanadas.php" method="post">' +
-                                                '<p style="color:white">Amount: <input type="text" name="amount"</p>' +
-                                                '<input style="color:black" type="submit">' +
+                                                '<form action="submit.php" method="post">' +
+                                                    '<p style="color:white;">Amount:</p>'+
+                                                    '<input type="text" name="amount" size="1">'+
+                                                    '<input type="submit">' +
                                                 '</form>'+
                                             '</div>' +
                                     '</div>';
