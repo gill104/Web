@@ -1,5 +1,9 @@
 body {
-    background:blue;
+    
+    background-image: url("Images/tempBG.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .bg-white{
     background:white;

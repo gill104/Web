@@ -1,20 +1,24 @@
 {
   "empanadas": [
     {
-      "name": "emp-pine",
-      "imgPath": "Images/emp-pine.jpg"
+      "name": "Pineapple Emp",
+      "imgPath": "Images/emp-pine.jpg",
+      "price" : "50"
     },
     {
-      "name": "emp-chee",
-      "imgPath": "Images/emp-chee.jpg"
+      "name": "Cheese Emp",
+      "imgPath": "Images/emp-chee.jpg",
+      "price" : "50"
     },
     {
-      "name": "emp-cand",
-      "imgPath": "Images/emp-cand2.jpg"
+      "name": "Cajeta Emp",
+      "imgPath": "Images/emp-cand2.jpg",
+      "price" : "50"
     },
     {
-      "name": "emp-pump",
-      "imgPath": "Images/emp-pump.jpg"
+      "name": "Pumpkin Emp",
+      "imgPath": "Images/emp-pump.jpg",
+      "price" : "50"
     }
   ],
     "toast" : [

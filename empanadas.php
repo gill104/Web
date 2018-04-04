@@ -38,11 +38,16 @@
                             imgList += '<div class="row">';
                         }
 						//added style float testing 
-                        imgList +=  '<div id="li-container" class="container col-sm-3">' + 
+                        imgList +=  '<div id="li-container" class="container col-xs-4 col-sm-3">' + 
                                             '<img style="float:left;" id="'+classdef+'"class="img-thumbnail imgArr" src=#>' + 
-                                            '<div class="container col-sm-3">' +
-                                            '<h4 > Bread name:' + this.name + '</h4>'+
-                                            '</div>'+
+                                            '<div class="container col-sm-12">' +
+                                                '<h4 style="color:white"> Name:' + this.name + '</h4>' +
+                                                '<h4 style="color:white"><span class="glyphicon glyphicon-usd"></span> : ' + this.price + 'c</h4>' +
+                                                '<form action="empanadas.php" method="post">' +
+                                                '<p style="color:white">Amount: <input type="text" name="amount"</p>' +
+                                                '<input style="color:black" type="submit">' +
+                                                '</form>'+
+                                            '</div>' +
                                     '</div>';
                         count++;
 						classdef++;
