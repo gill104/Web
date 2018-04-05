@@ -1,18 +1,17 @@
-function LoopItems(){
-    for(var x = 0; x < items.length; x++)
+
+	function showImg(x)
 	{
-	    $.each(items[x], function(){
-								//var my_img = new Image();
-								//my_img.src = this.imgPath;
-		console.log(this.imgPath);
-		console.log(counter);
-						
-		runit(counter, this.imgPath);
-		counter++;
-	    });
-    }
-}
-function runit(idVal, img)
-{
-    document.getElementById(idVal).src = img;
-}
+		console.log(x);
+		var jsonURL = "breadImages.json";
+		var counter = 0;
+		
+		$.getJSON(jsonURL,function(json)
+		{
+			items = [json.empanada,json.toast,json.sponge,json.pastry];
+
+			$.each(items[x], function(){
+				document.getElementById(counter).src = this.imgPath;
+				counter++;
+			});	
+		});					
+	}

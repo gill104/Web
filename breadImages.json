@@ -1,5 +1,5 @@
 {
-  "empanadas": [
+  "empanada": [
     {
       "name": "Pineapple Emp",
       "imgPath": "Images/Empanada/emp-pine.jpg",
@@ -49,7 +49,7 @@
             "imgPath" : "Images/Sponge/sponge-leg.jpg"
         }
     ],
-    "pastery" : [
+    "pastry" : [
         {
             "name" : "past-cup",
             "imgPath" : "Images/Pastry/past-cup.jpg"

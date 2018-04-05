@@ -21,10 +21,10 @@
                 var imgList = "";
                 var count = 0;
 				var classdef = 0;
-                var items = [json.pastery];
-                for(var x = 0; x < items.length; x++)
-                {
-                    $.each(items[x], function(){
+                //var items = [json.pastry];
+                //for(var x = 0; x < items.length; x++)
+                //{
+                    $.each(json.pastry, function(){
 						var my_img = new Image();
 						my_img.src = this.imgPath;
 						console.log('first created: ' + my_img.src);
@@ -47,7 +47,7 @@
                         count++;
 						classdef++;
                     });
-                }
+               // }
 
                     $('#breadLi').append(imgList);//puts into a container below
                     console.log(imgList);
@@ -64,36 +64,27 @@
 
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
-		<script>
-		$(document).ready(function()
-        {
-				console.log('doing stuff inthis scrupt!!!');
-					var jsonURL = "breadImages.json";
-					var counter = 0;
-					$.getJSON(jsonURL,function(json)
-					{
-						var items = [json.pastery];
-					
-						for(var x = 0; x < items.length; x++)
-						{
-							 $.each(items[x], function(){
-								//var my_img = new Image();
-								//my_img.src = this.imgPath;
-								console.log(this.imgPath);
-								console.log(counter);
-						
-								runit(counter, this.imgPath);
-								counter++;
-							});
-						}
-					});	
-			
-				function runit(idVal, img)
-				{
-					document.getElementById(idVal).src = img;
-				}
-			});
-		</script>
+        <script type="text/javascript" src="testScript.js"></script>
+        <script>
+            $(document).ready(function() {
+                showImg(3);
+        });
+        </script>
+		<!--<script>
+            $(document).ready(
+            function showImg()
+            {
+                var jsonURL = "breadImages.json";
+                var counter = 0;
+                $.getJSON(jsonURL,function(json)
+                {
+                    $.each(json.pastry, function(){
+                        document.getElementById(counter).src = this.imgPath;
+                        counter++;
+                    });	
+                });			
+            });
+		</script>-->
 
        
     </body>
