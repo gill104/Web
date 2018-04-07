@@ -16,15 +16,26 @@
 		$(document).ready(function()
         {
             var jsonURL = "breadImages.json";
+           
             $.getJSON(jsonURL,function(json)
             {
+                <?php
+                if(isset($_GET['type'])){
+                    echo "var type = " . $_GET['type'] . ";";
+
+                }
+                else{
+                    echo 'Error: no type';
+                }
+                ?>
                 var imgList = "";
                 var count = 0;
 				var classdef = 0;
-                var items = [json.empanadas];
-                for(var x = 0; x < items.length; x++)
-                {
-                    $.each(items[x], function(){
+                var breadTypes = [json.empanada, json.toast, json.sponge, json.pastry];
+                //for(var x = 0; x < breadTypes[type].length; x++)
+               // {
+                    $.each(breadTypes[type], function(){
+                        console.log('type: ' + type);
 						var my_img = new Image();
 						my_img.src = this.imgPath;
 						console.log('first created: ' + my_img.src);
@@ -53,12 +64,13 @@
                         count++;
 						classdef++;
                     });
-                }
+               /// }
 
                     $('#breadLi').append(imgList);//puts into a container below
                     console.log(imgList);
                 });
             });
+            
         </script>
 	
     </head>
@@ -70,37 +82,21 @@
 
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
-		<script>
-			$(document).ready(function()//runs at this point while file being read
-			{
-				console.log('doing stuff inthis scrupt!!!');
-					var jsonURL = "breadImages.json";
-					var counter = 0;
-					$.getJSON(jsonURL,function(json)
-					{
-						var items = [json.empanadas];
-					
-						for(var x = 0; x < items.length; x++)
-						{
-							 $.each(items[x], function(){
-								//var my_img = new Image();
-								//my_img.src = this.imgPath;
-								console.log(this.imgPath);
-								console.log(counter);
-						
-								runit(counter, this.imgPath);
-								counter++;
-							});
-						}
-					});	
-			
-				function runit(idVal, img)
-				{
-					document.getElementById(idVal).src = img;
-				}
-			});
-		</script>
+	    <script type="text/javascript" src="testScript.js"></script>
+        <script>
+            <?php
+                if(isset($_GET['type'])){
+                    echo "var type = " . $_GET['type'] . ";";
 
+                }
+                else{
+                    echo 'Error: no type';
+                }
+                ?>
+            $(document).ready(function() {
+                showImg(type);
+        });
+        </script>
        
     </body>
 </html>

@@ -21,7 +21,7 @@
                 var imgList = "";
                 var count = 0;
 				var classdef = 0;
-                var items = [json.sponge];
+                var items = [json.toast];
                 for(var x = 0; x < items.length; x++)
                 {
                     $.each(items[x], function(){
@@ -64,37 +64,12 @@
 
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
-		<script>
-		$(document).ready(function()
-        {
-				console.log('doing stuff inthis scrupt!!!');
-					var jsonURL = "breadImages.json";
-					var counter = 0;
-					$.getJSON(jsonURL,function(json)
-					{
-						var items = [json.sponge];
-					
-						for(var x = 0; x < items.length; x++)
-						{
-							 $.each(items[x], function(){
-								//var my_img = new Image();
-								//my_img.src = this.imgPath;
-								console.log(this.imgPath);
-								console.log(counter);
-						
-								runit(counter, this.imgPath);
-								counter++;
-							});
-						}
-					});	
-			
-				function runit(idVal, img)
-				{
-					document.getElementById(idVal).src = img;
-				}
-			});
-		</script>
-
+	    <script type="text/javascript" src="testScript.js"></script>
+        <script>
+            $(document).ready(function() {
+                showImg(1);
+        });
+        </script>
        
     </body>
 </html>

@@ -1,7 +1,7 @@
 
 	function showImg(x)
 	{
-		console.log(x);
+		console.log('asdasdasd' + x);
 		var jsonURL = "breadImages.json";
 		var counter = 0;
 		
@@ -15,3 +15,4 @@
 			});	
 		});					
 	}
+	

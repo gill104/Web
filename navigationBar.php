@@ -1,30 +1,3 @@
-<script>
-    $(document).ready(function()
-    {
-        jsonFile = "breadImages.json";
-        var breadList = "";
-        var node;
-        var textnode;
-        var hrefnode;
-        
-        $.getJSON(jsonFile,function(json)
-        {
-            var breadTypes = [json.empanadas, json.toast, json.sponge, json.pastery];
-            for(var key in json)
-		    {
-                node = document.createElement("Li");
-                var anchor = document.createElement("a");
-                anchor.innerHTML = key;
-                //add conditional for if based on key name to only display 'x' images
-                anchor.href = key+".php";
-                node.appendChild(anchor);
-                document.getElementById("btypes").appendChild(node);
-				console.log(key);
-			}
-        });
-    });
-
-                        </script>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -52,3 +25,30 @@
         </div>
     </div>
 </nav>
+<script>
+    $(document).ready(function()
+    {
+        jsonFile = "breadImages.json";
+        var breadList = "";
+        var node;
+        var textnode;
+        var hrefnode;
+        var counter = 0;
+        $.getJSON(jsonFile,function(json)
+        {
+            var breadTypes = [json.empanada, json.toast, json.sponge, json.pastry];
+            for(var key in json)
+		    {
+                node = document.createElement("Li");
+                var anchor = document.createElement("a");
+                anchor.innerHTML = key;
+                //add conditional for if based on key name to only display 'x' images
+                anchor.href = "breadSelection.php"+"?type="+counter;
+                node.appendChild(anchor);
+                document.getElementById("btypes").appendChild(node);
+                console.log(key);
+                counter++;
+			}
+        });
+    });
+</script>
