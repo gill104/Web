@@ -10,7 +10,11 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
+
 
 	    <script>
 	
@@ -57,7 +61,7 @@
     <?php
         include "navigationBar.php"
     ?>
-
+    <!--https://www.facebook.com/AlvaradosBakery/-->
         <article id="top-fix-margin" class="container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!--Indicators-->
@@ -70,13 +74,16 @@
                 <!--Wrapper for slides-->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="Images/Donut.png" alt="donuts" />
+                        <img src="Images/Logo/BakeryLogo.png" alt="bLogo" />
                     </div>
                     <div class="item">
-                        <img src="Images/Sponge/Concha.png" alt="donuts2" />
+                        <img src="Images/Sponge/tray-rose.jpg" alt="roseTray" />
                     </div>
                     <div class="item">
-                        <img src="Images/Sponge/ChocoConcha.jpg" alt="donuts3" />
+                        <img src="Images/Pastry/tray-cup.jpg" alt="cupTray" />
+                    </div>
+                    <div class="item">
+                        <img src="Images/Pastry/tray-pig.jpg" alt="pigTray" />
                     </div>
                 </div>
 
@@ -97,7 +104,9 @@
             </div>
         </article>
         <footer style="background-color:black; color:white;">
-            footer things here!
+            
+                <a href="https://www.facebook.com/AlvaradosBakery/" class="fa fa-facebook"></a>
+          
         </footer>
     </body>
 </html>

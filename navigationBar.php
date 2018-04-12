@@ -19,7 +19,7 @@
                     </ul>
                     
                 </li>
-                <li> <a href="imageUpload.html">Cakes</a> </li>
+                <li> <a href="cakeSelection.php">Cakes</a> </li>
                 <li> <a href="#">About Us </a> </li>
             </ul>
         </div>
