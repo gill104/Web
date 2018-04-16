@@ -77,7 +77,7 @@
         <?php include("navigationBar.php"); ?>
         <!--mk a sub nav bar to show all breads or catagories of them-->
 
-        <p style="margin-top:70px" >This is another page!!!!</p>
+        <h1 style="margin-top:70px" id=title-page >This is another page!!!!</h1>
 
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
@@ -86,12 +86,31 @@
             <?php
                 if(isset($_GET['type'])){
                     echo "var type = " . $_GET['type'] . ";";
-
+                    
                 }
                 else{
                     echo 'Error: no type';
                 }
             ?>
+            switch(type)
+            {
+                case 0:
+                    document.getElementById("title-page").innerHTML = "Empanadas";
+                    break;
+                case 1:
+                    document.getElementById("title-page").innerHTML = "Toast";
+                    break;
+                case 2:
+                    document.getElementById("title-page").innerHTML = "Sponge";
+                    break;
+                case 3:
+                    document.getElementById("title-page").innerHTML = "Pastry";
+                    break;
+                default:
+                    document.getElementById("title-page").innerHTML = "Missing";
+                    break;
+               
+            }
             $(document).ready(function() {
                 showImg(type);
         });
