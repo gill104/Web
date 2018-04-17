@@ -11,7 +11,11 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
+
+        <script type="text/javascript" src="testScript.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="mainStyleSheet.css">
+        
 		<script>
 		$(document).ready(function()
         {
@@ -55,7 +59,7 @@
                                             '<h4 style="color:white"><span class="glyphicon glyphicon-usd"></span> : ' + this.price + 'c</h4>' +
                                             '<form action="submit.php" method="post">' +
                                                 '<p style="color:white;">Amount:</p>'+
-                                                '<input type="text" name="amount" size="1">'+
+                                                '<input type="number" name="amount" min="1" max="99">'+
                                                 '<input type="submit">' +
                                             '</form>'+
                                         '</div>' +
@@ -77,11 +81,12 @@
         <?php include("navigationBar.php"); ?>
         <!--mk a sub nav bar to show all breads or catagories of them-->
 
-        <h1 style="margin-top:70px" id=title-page >This is another page!!!!</h1>
+        <h1 style="margin-top:70px" id=title-page class="heading">This is another page!!!!</h1>
 
         <div id="breadLi" class="container-fluid" style="background: 'red';">
 
-	    <script type="text/javascript" src="testScript.js"></script>
+        
+        
         <script>
             <?php
                 if(isset($_GET['type'])){

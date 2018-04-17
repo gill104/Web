@@ -52,6 +52,12 @@ ul{
     border: solid 5px orange;
     padding: 10px;
 }
+.heading{
+    color: white;
+    background-color: black;
+    border: solid 5px orange;
+    padding: 10px;
+}
 .amount-input{
     width:10px;
 }
@@ -67,4 +73,7 @@ ul{
 .fa-facebook{
     background: blue;
     color:white;
+}
+input[type=number]{
+    width: 50px;
 }
